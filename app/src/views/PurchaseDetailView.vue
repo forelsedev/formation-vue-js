@@ -1,21 +1,34 @@
 <script setup>
-import { computed } from 'vue'
+import { watch } from 'vue'
 import { RouterLink } from 'vue-router'
-import { samplePurchases } from '../data/sample'
+import { session } from '../session'
+import { getPurchase, ApiError } from '../services/api'
+import { useRequest } from '../composables/useRequest'
 import { formatPrice, formatDate } from '../utils/loyalty'
+import StatusMessage from '../components/StatusMessage.vue'
 
 // Le paramètre de route arrive en prop grâce à `props: true` dans le routeur
 const props = defineProps({
   id: { type: String, required: true },
 })
 
-const purchase = computed(() => samplePurchases.find((item) => item.id === Number(props.id)))
+const { data: purchase, loading, error, run } = useRequest(async () => {
+  const result = await getPurchase(props.id)
+  // On ne montre pas le ticket d'une autre carte
+  if (result.cardId !== session.card.id) throw new ApiError('Élément introuvable.', 404)
+  return result
+})
+
+// Même composant, autre paramètre (/achats/1 → /achats/2) : on recharge
+watch(() => props.id, () => run())
 </script>
 
 <template>
   <RouterLink :to="{ name: 'purchases' }" class="back">← Historique</RouterLink>
 
-  <article v-if="purchase" class="ticket">
+  <StatusMessage :loading="loading" :error="error" @retry="run" />
+
+  <article v-if="purchase && !error" class="ticket">
     <h2>{{ purchase.store }}</h2>
     <p class="meta">
       {{ formatDate(purchase.date, { dateStyle: 'full' }) }} · ticket n° {{ purchase.id }}
@@ -40,10 +53,11 @@ const purchase = computed(() => samplePurchases.find((item) => item.id === Numbe
       </tbody>
     </table>
     <p class="total">Total <strong>{{ formatPrice(purchase.total) }}</strong></p>
-    <p class="points">+{{ purchase.points }} points gagnés</p>
+    <p class="points">
+      +{{ purchase.points }} points gagnés
+      <span v-if="purchase.bonusPoints">(dont {{ purchase.bonusPoints }} de bonus)</span>
+    </p>
   </article>
-
-  <p v-else>Cet achat n'existe pas.</p>
 </template>
 
 <style scoped>
@@ -98,5 +112,9 @@ small {
   margin: 0;
   color: var(--color-success);
   font-weight: 600;
+}
+
+.points span {
+  font-weight: 400;
 }
 </style>
