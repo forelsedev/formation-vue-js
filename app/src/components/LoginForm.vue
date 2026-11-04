@@ -1,6 +1,7 @@
 <script setup>
 import { ref, onMounted } from 'vue'
 import CardNumberInput from './CardNumberInput.vue'
+import BaseButton from './BaseButton.vue'
 
 defineProps({
   error: { type: String, default: '' },
@@ -27,9 +28,7 @@ function submit() {
     <p>Saisissez le numéro inscrit au dos de votre carte de fidélité.</p>
     <CardNumberInput ref="numberInput" v-model="number" @validity="valid = $event" />
     <p v-if="error" class="error">{{ error }}</p>
-    <button type="submit" :disabled="!valid || loading">
-      {{ loading ? 'Connexion…' : 'Accéder à ma carte' }}
-    </button>
+    <BaseButton type="submit" block :loading="loading" :disabled="!valid">Accéder à ma carte</BaseButton>
   </form>
 </template>
 
@@ -51,21 +50,5 @@ p {
 
 .error {
   color: var(--color-danger);
-}
-
-button {
-  padding: 0.75rem;
-  border: none;
-  border-radius: 8px;
-  background: var(--color-primary);
-  color: #fff;
-  font: inherit;
-  font-weight: 600;
-  cursor: pointer;
-}
-
-button:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 </style>

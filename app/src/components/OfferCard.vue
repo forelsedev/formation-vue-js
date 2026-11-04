@@ -1,10 +1,12 @@
 <script setup>
+import BaseButton from './BaseButton.vue'
+
 defineProps({
   offer: { type: Object, required: true },
   activated: { type: Boolean, default: false },
 })
 
-const emit = defineEmits(['activate'])
+const emit = defineEmits(['activate', 'details'])
 </script>
 
 <template>
@@ -19,8 +21,9 @@ const emit = defineEmits(['activate'])
       <div class="actions">
         <slot name="actions" :activated="activated">
           <span v-if="activated" class="status">Offre activée</span>
-          <button v-else type="button" @click="emit('activate', offer.id)">Activer</button>
+          <BaseButton v-else size="sm" @click="emit('activate', offer.id)">Activer</BaseButton>
         </slot>
+        <BaseButton size="sm" variant="secondary" @click="emit('details', offer.id)">Détails</BaseButton>
       </div>
     </div>
   </article>
@@ -31,7 +34,6 @@ const emit = defineEmits(['activate'])
   display: flex;
   gap: 0.75rem;
   padding: 0.75rem;
-  margin-bottom: 0.5rem;
   border-radius: 8px;
   background: var(--color-surface);
   border-left: 4px solid var(--color-accent);
@@ -70,18 +72,9 @@ p {
 
 .actions {
   display: flex;
+  align-items: center;
   gap: 0.5rem;
   margin-top: 0.5rem;
-}
-
-button {
-  padding: 0.35rem 0.9rem;
-  border: none;
-  border-radius: 999px;
-  background: var(--color-primary);
-  color: #fff;
-  font: inherit;
-  cursor: pointer;
 }
 
 .status {
