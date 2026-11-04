@@ -6,6 +6,7 @@ import { formatPrice } from '../utils/loyalty'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
 import StatusMessage from '../components/StatusMessage.vue'
+import SpendingChart from '../components/SpendingChart.vue'
 
 const router = useRouter()
 const { purchases, loading, error, reload } = usePurchases()
@@ -33,6 +34,8 @@ const totalSpent = computed(() => filteredPurchases.value.reduce((sum, purchase)
 </script>
 
 <template>
+  <SpendingChart v-if="purchases?.length" :purchases="purchases" />
+
   <BasePanel class="first">
     <template #title>Historique des achats</template>
 
