@@ -1,33 +1,17 @@
 <script setup>
-import { ref } from 'vue'
-import { sampleCard } from './data/sample'
+import { RouterView } from 'vue-router'
+import { session } from './session'
 import AppHeader from './components/AppHeader.vue'
 import BottomNav from './components/BottomNav.vue'
-import LoginForm from './components/LoginForm.vue'
-import HomeView from './views/HomeView.vue'
-
-// Pas encore de routeur ni d'API : on simule la connexion avec la carte d'exemple
-const card = ref(null)
-const loginError = ref('')
-
-function login(number) {
-  if (number === sampleCard.number) {
-    card.value = { ...sampleCard }
-    loginError.value = ''
-  } else {
-    loginError.value = 'Carte inconnue. Essayez 2990000000001.'
-  }
-}
 </script>
 
 <template>
   <div class="app-shell">
     <AppHeader title="Ma carte fidélité" />
     <main class="content">
-      <HomeView v-if="card" :card="card" />
-      <LoginForm v-else :error="loginError" @login="login" />
+      <RouterView />
     </main>
-    <BottomNav v-if="card" />
+    <BottomNav v-if="session.card" />
   </div>
 </template>
 
