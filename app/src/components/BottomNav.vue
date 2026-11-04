@@ -1,19 +1,20 @@
 <script setup>
-// Navigation statique pour l'instant : elle sera branchée sur Vue Router au module 4
+import { RouterLink } from 'vue-router'
+
 const links = [
-  { label: 'Ma carte', icon: '▣' },
-  { label: 'Achats', icon: '≡' },
-  { label: 'Offres', icon: '%' },
-  { label: 'Profil', icon: '◉' },
+  { label: 'Ma carte', icon: '▣', to: { name: 'home' } },
+  { label: 'Achats', icon: '≡', to: { name: 'purchases' } },
+  { label: 'Offres', icon: '%', to: { name: 'offers' } },
+  { label: 'Profil', icon: '◉', to: { name: 'profile' } },
 ]
 </script>
 
 <template>
   <nav class="bottom-nav">
-    <a v-for="link in links" :key="link.label" href="#">
+    <RouterLink v-for="link in links" :key="link.label" :to="link.to">
       <span class="icon" aria-hidden="true">{{ link.icon }}</span>
       {{ link.label }}
-    </a>
+    </RouterLink>
   </nav>
 </template>
 
@@ -36,6 +37,11 @@ a {
   font-size: 0.75rem;
   color: var(--color-muted);
   text-decoration: none;
+}
+
+a.router-link-exact-active {
+  color: var(--color-primary);
+  font-weight: 600;
 }
 
 .icon {

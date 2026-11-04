@@ -1,19 +1,18 @@
 <script setup>
+import { formatPrice, formatDate } from '../utils/loyalty'
+
 const props = defineProps({
   purchase: { type: Object, required: true },
 })
 
 const emit = defineEmits(['select'])
-
-const formatPrice = (value) => value.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })
-const formatDate = (value) => new Date(value).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })
 </script>
 
 <template>
   <li class="purchase-item" @click="emit('select', props.purchase.id)">
     <div>
       <strong>{{ purchase.store }}</strong>
-      <small>{{ formatDate(purchase.date) }} · {{ purchase.itemCount }} articles</small>
+      <small>{{ formatDate(purchase.date) }} · {{ purchase.items.length }} articles</small>
     </div>
     <div class="amount">
       {{ formatPrice(purchase.total) }}
