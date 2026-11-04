@@ -1,13 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { samplePurchases } from '../data/sample'
+import { useLoyaltyAccount } from '../composables/useLoyaltyAccount'
 import { formatPrice } from '../utils/loyalty'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
+import StatusMessage from '../components/StatusMessage.vue'
 
 const router = useRouter()
-const purchases = ref(samplePurchases)
+const { purchases, loading, error, load } = useLoyaltyAccount()
 
 // Filtre par période (en jours, 0 = tout l'historique)
 const periods = [
@@ -47,6 +48,7 @@ const totalSpent = computed(() => filteredPurchases.value.reduce((sum, purchase)
     </div>
     <input v-model="search" type="search" placeholder="Rechercher un magasin" />
 
+    <StatusMessage :loading="loading" :error="error" @retry="load" />
     <ul v-if="filteredPurchases.length">
       <PurchaseItem
         v-for="purchase in filteredPurchases"
@@ -55,7 +57,7 @@ const totalSpent = computed(() => filteredPurchases.value.reduce((sum, purchase)
         @select="router.push({ name: 'purchase', params: { id: $event } })"
       />
     </ul>
-    <p v-else class="empty">Aucun achat sur cette période.</p>
+    <p v-else-if="!loading && !error" class="empty">Aucun achat sur cette période.</p>
 
     <template #footer>
       {{ filteredPurchases.length }} achat(s) pour un total de <strong>{{ formatPrice(totalSpent) }}</strong>

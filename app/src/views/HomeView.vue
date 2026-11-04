@@ -2,14 +2,16 @@
 import { computed } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
 import { session } from '../session'
-import { samplePurchases } from '../data/sample'
+import { useLoyaltyAccount } from '../composables/useLoyaltyAccount'
 import LoyaltyCard from '../components/LoyaltyCard.vue'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
+import StatusMessage from '../components/StatusMessage.vue'
 
 const router = useRouter()
+const { purchases, activeOfferCount, loading, error, load } = useLoyaltyAccount()
 
-const latestPurchases = computed(() => samplePurchases.slice(0, 3))
+const latestPurchases = computed(() => purchases.value.slice(0, 3))
 
 function openPurchase(id) {
   router.push({ name: 'purchase', params: { id } })
@@ -18,6 +20,7 @@ function openPurchase(id) {
 
 <template>
   <LoyaltyCard :card="session.card" />
+  <StatusMessage :loading="loading" :error="error" @retry="load" />
 
   <BasePanel>
     <template #title>
@@ -32,7 +35,7 @@ function openPurchase(id) {
   <BasePanel>
     <template #title>Mes offres</template>
     <p>
-      {{ session.activatedOfferIds.length }} offre(s) activée(s).
+      {{ activeOfferCount }} offre(s) activée(s).
       <RouterLink :to="{ name: 'offers' }">Voir les offres</RouterLink>
     </p>
   </BasePanel>
