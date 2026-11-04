@@ -1,5 +1,5 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import { session } from '../session'
+import { useAccountStore } from '../stores/account'
 import HomeView from '../views/HomeView.vue'
 import LoginView from '../views/LoginView.vue'
 
@@ -40,10 +40,11 @@ const router = createRouter({
 
 // Garde de navigation : les pages du compte exigent d'être connecté
 router.beforeEach((to) => {
-  if (to.meta.requiresAuth && !session.card) {
+  const account = useAccountStore()
+  if (to.meta.requiresAuth && !account.isLoggedIn) {
     return { name: 'login', query: { redirect: to.fullPath } }
   }
-  if (to.name === 'login' && session.card) {
+  if (to.name === 'login' && account.isLoggedIn) {
     return { name: 'home' }
   }
 })

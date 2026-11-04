@@ -1,7 +1,7 @@
 <script setup>
 import { watch } from 'vue'
 import { RouterLink } from 'vue-router'
-import { session } from '../session'
+import { useAccountStore } from '../stores/account'
 import { getPurchase, ApiError } from '../services/api'
 import { useRequest } from '../composables/useRequest'
 import { formatPrice, formatDate } from '../utils/loyalty'
@@ -12,10 +12,12 @@ const props = defineProps({
   id: { type: String, required: true },
 })
 
+const account = useAccountStore()
+
 const { data: purchase, loading, error, run } = useRequest(async () => {
   const result = await getPurchase(props.id)
   // On ne montre pas le ticket d'une autre carte
-  if (result.cardId !== session.card.id) throw new ApiError('Élément introuvable.', 404)
+  if (result.cardId !== account.card.id) throw new ApiError('Élément introuvable.', 404)
   return result
 })
 

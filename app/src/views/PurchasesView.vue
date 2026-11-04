@@ -1,14 +1,14 @@
 <script setup>
 import { ref, computed } from 'vue'
 import { useRouter } from 'vue-router'
-import { useLoyaltyAccount } from '../composables/useLoyaltyAccount'
+import { usePurchases } from '../composables/usePurchases'
 import { formatPrice } from '../utils/loyalty'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
 import StatusMessage from '../components/StatusMessage.vue'
 
 const router = useRouter()
-const { purchases, loading, error, load } = useLoyaltyAccount()
+const { purchases, loading, error, reload } = usePurchases()
 
 // Filtre par période (en jours, 0 = tout l'historique)
 const periods = [
@@ -22,7 +22,7 @@ const search = ref('')
 const filteredPurchases = computed(() => {
   const limit = new Date()
   limit.setDate(limit.getDate() - selectedDays.value)
-  return purchases.value.filter((purchase) => {
+  return (purchases.value ?? []).filter((purchase) => {
     const inPeriod = selectedDays.value === 0 || new Date(purchase.date) >= limit
     const matchesStore = purchase.store.toLowerCase().includes(search.value.toLowerCase())
     return inPeriod && matchesStore
@@ -48,7 +48,7 @@ const totalSpent = computed(() => filteredPurchases.value.reduce((sum, purchase)
     </div>
     <input v-model="search" type="search" placeholder="Rechercher un magasin" />
 
-    <StatusMessage :loading="loading" :error="error" @retry="load" />
+    <StatusMessage :loading="loading" :error="error" @retry="reload" />
     <ul v-if="filteredPurchases.length">
       <PurchaseItem
         v-for="purchase in filteredPurchases"

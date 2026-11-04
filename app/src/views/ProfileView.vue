@@ -1,26 +1,30 @@
 <script setup>
 import { useRouter } from 'vue-router'
-import { session, logout } from '../session'
+import { useAccountStore } from '../stores/account'
+import { useOffersStore } from '../stores/offers'
 import { formatDate } from '../utils/loyalty'
 
 const router = useRouter()
+const account = useAccountStore()
+const offersStore = useOffersStore()
 
 function onLogout() {
-  logout()
+  account.logout()
+  offersStore.$reset()
   router.push({ name: 'login' })
 }
 </script>
 
 <template>
   <section class="profile">
-    <h2>{{ session.card.firstName }} {{ session.card.lastName }}</h2>
+    <h2>{{ account.fullName }}</h2>
     <dl>
       <dt>Numéro de carte</dt>
-      <dd>{{ session.card.number }}</dd>
+      <dd>{{ account.card.number }}</dd>
       <dt>E-mail</dt>
-      <dd>{{ session.card.email }}</dd>
+      <dd>{{ account.card.email }}</dd>
       <dt>Client depuis le</dt>
-      <dd>{{ formatDate(session.card.createdAt, { dateStyle: 'long' }) }}</dd>
+      <dd>{{ formatDate(account.card.createdAt, { dateStyle: 'long' }) }}</dd>
     </dl>
     <button type="button" @click="onLogout">Se déconnecter</button>
   </section>

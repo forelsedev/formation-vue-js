@@ -1,27 +1,25 @@
 <script setup>
-import { ref, computed } from 'vue'
-import { useLoyaltyAccount } from '../composables/useLoyaltyAccount'
+import { inject } from 'vue'
+import { storeToRefs } from 'pinia'
+import { useOffersStore } from '../stores/offers'
 import { formatDate } from '../utils/loyalty'
 import BasePanel from '../components/BasePanel.vue'
 import OfferCard from '../components/OfferCard.vue'
 import StatusMessage from '../components/StatusMessage.vue'
 
-const { offers, loading, error, load, offerStatus, activateOffer } = useLoyaltyAccount()
-const activationError = ref('')
+const offersStore = useOffersStore()
+// storeToRefs garde la réactivité quand on déstructure le state et les getters
+const { sortedOffers, loading, error } = storeToRefs(offersStore)
+const notify = inject('notify')
 
-// Offres expirées et déjà utilisées en fin de liste
-const sortedOffers = computed(() =>
-  [...offers.value].sort(
-    (a, b) => ['used', 'expired'].includes(offerStatus(a)) - ['used', 'expired'].includes(offerStatus(b)),
-  ),
-)
+offersStore.load()
 
 async function activate(offerId) {
-  activationError.value = ''
   try {
-    await activateOffer(offerId)
+    await offersStore.activate(offerId)
+    notify('Offre activée')
   } catch (e) {
-    activationError.value = e.message
+    notify(e.message)
   }
 }
 </script>
@@ -29,22 +27,21 @@ async function activate(offerId) {
 <template>
   <BasePanel class="first">
     <template #title>Mes offres</template>
-    <StatusMessage :loading="loading" :error="error" @retry="load" />
-    <p v-if="activationError" class="error">{{ activationError }}</p>
+    <StatusMessage :loading="loading" :error="error" @retry="offersStore.load(true)" />
 
     <OfferCard
       v-for="offer in sortedOffers"
       :key="offer.id"
       :offer="offer"
-      :activated="offerStatus(offer) === 'activated'"
+      :activated="offersStore.statusOf(offer) === 'activated'"
       @activate="activate"
     >
       <p class="description">{{ offer.description }}</p>
       <p class="expires">Valable jusqu'au {{ formatDate(offer.expiresAt, { dateStyle: 'long' }) }}</p>
 
       <!-- Slot nommé : on remplace les actions par défaut pour les offres utilisées ou expirées -->
-      <template v-if="['used', 'expired'].includes(offerStatus(offer))" #actions>
-        <span class="muted">{{ offerStatus(offer) === 'used' ? 'Déjà utilisée' : 'Offre expirée' }}</span>
+      <template v-if="['used', 'expired'].includes(offersStore.statusOf(offer))" #actions>
+        <span class="muted">{{ offersStore.statusOf(offer) === 'used' ? 'Déjà utilisée' : 'Offre expirée' }}</span>
       </template>
     </OfferCard>
 
@@ -72,9 +69,5 @@ async function activate(offerId) {
 .muted {
   color: var(--color-muted);
   font-size: 0.9rem;
-}
-
-.error {
-  color: var(--color-danger);
 }
 </style>
