@@ -1,8 +1,23 @@
 <script setup>
+import { ref, provide } from 'vue'
 import { RouterView } from 'vue-router'
-import { session } from './session'
+import { useAccountStore } from './stores/account'
 import AppHeader from './components/AppHeader.vue'
 import BottomNav from './components/BottomNav.vue'
+import AppToast from './components/AppToast.vue'
+
+const account = useAccountStore()
+
+// provide / inject : n'importe quel composant descendant peut afficher une notification
+// avec inject('notify'), sans passer de props à travers toute l'arborescence
+const toastMessage = ref('')
+let toastTimer
+function notify(message) {
+  toastMessage.value = message
+  clearTimeout(toastTimer)
+  toastTimer = setTimeout(() => (toastMessage.value = ''), 2500)
+}
+provide('notify', notify)
 </script>
 
 <template>
@@ -11,7 +26,8 @@ import BottomNav from './components/BottomNav.vue'
     <main class="content">
       <RouterView />
     </main>
-    <BottomNav v-if="session.card" />
+    <BottomNav v-if="account.isLoggedIn" />
+    <AppToast :message="toastMessage" />
   </div>
 </template>
 
