@@ -1,9 +1,10 @@
 <script setup>
-import { computed } from 'vue'
+import { computed, watch, inject } from 'vue'
 import { RouterLink, useRouter } from 'vue-router'
 import { useAccountStore } from '../stores/account'
 import { useOffersStore } from '../stores/offers'
 import { usePurchases } from '../composables/usePurchases'
+import { useAutoRefresh } from '../composables/useAutoRefresh'
 import LoyaltyCard from '../components/LoyaltyCard.vue'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
@@ -19,6 +20,20 @@ account.refresh()
 offersStore.load()
 
 const latestPurchases = computed(() => (purchases.value ?? []).slice(0, 3))
+
+// Fonctionnalité du jour 3 : le solde se met à jour seul après un passage dans la caisse factice
+const notify = inject('notify')
+useAutoRefresh(() => account.refresh().catch(() => {}), 10000)
+
+watch(
+  () => account.card?.points,
+  (points, previous) => {
+    if (previous === undefined || points <= previous) return
+    notify(`+${points - previous} points crédités`)
+    reload()
+    offersStore.load(true)
+  },
+)
 
 function openPurchase(id) {
   router.push({ name: 'purchase', params: { id } })
