@@ -1,13 +1,14 @@
 <script setup>
 import AppHeader from './components/AppHeader.vue'
 import BottomNav from './components/BottomNav.vue'
+import HomeView from './views/HomeView.vue'
 </script>
 
 <template>
   <div class="app-shell">
     <AppHeader title="Ma carte fidélité" />
     <main class="content">
-      <p>Bienvenue ! Le contenu de l'application arrive au module 2.</p>
+      <HomeView />
     </main>
     <BottomNav />
   </div>

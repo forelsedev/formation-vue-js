@@ -34,3 +34,7 @@ h3 {
 a {
   color: var(--color-primary);
 }
+
+h2 {
+  font-size: 1.15rem;
+}
