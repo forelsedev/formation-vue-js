@@ -1,9 +1,18 @@
 <script setup>
-import { ref, reactive, computed } from 'vue'
-import { sampleCard, samplePurchases } from '../data/sample'
+import { ref, computed } from 'vue'
+import { samplePurchases, sampleOffers } from '../data/sample'
+import LoyaltyCard from '../components/LoyaltyCard.vue'
+import BasePanel from '../components/BasePanel.vue'
+import PurchaseItem from '../components/PurchaseItem.vue'
+import OfferCard from '../components/OfferCard.vue'
 
-const card = reactive({ ...sampleCard })
+const props = defineProps({
+  card: { type: Object, required: true },
+})
+
 const purchases = ref(samplePurchases)
+const offers = ref(sampleOffers)
+const activatedIds = ref([])
 
 // Niveaux du programme de fidélité
 const levels = [
@@ -12,8 +21,8 @@ const levels = [
   { name: 'Or', min: 1000 },
 ]
 
-const level = computed(() => levels.findLast((item) => card.points >= item.min))
-const nextLevel = computed(() => levels.find((item) => item.min > card.points))
+const level = computed(() => levels.findLast((item) => props.card.points >= item.min))
+const nextLevel = computed(() => levels.find((item) => item.min > props.card.points))
 
 // Filtre par période (en jours, 0 = tout l'historique)
 const periods = [
@@ -36,23 +45,31 @@ const filteredPurchases = computed(() => {
 
 const totalSpent = computed(() => filteredPurchases.value.reduce((sum, purchase) => sum + purchase.total, 0))
 
+const selectedPurchaseId = ref(null)
+
+function activate(offerId) {
+  activatedIds.value.push(offerId)
+}
+
 const formatPrice = (value) => value.toLocaleString('fr-FR', { style: 'currency', currency: 'EUR' })
-const formatDate = (value) => new Date(value).toLocaleDateString('fr-FR', { day: 'numeric', month: 'long' })
 </script>
 
 <template>
-  <section class="card" :class="`level-${level.name.toLowerCase()}`">
-    <p class="holder">{{ card.firstName }} {{ card.lastName }}</p>
-    <p class="points">{{ card.points }} <span>points</span></p>
-    <p class="level">Niveau {{ level.name }}</p>
-    <p v-if="nextLevel" class="next">
-      Plus que {{ nextLevel.min - card.points }} points avant le niveau {{ nextLevel.name }}
-    </p>
-    <p v-else class="next">Vous avez atteint le niveau maximum</p>
-  </section>
+  <LoyaltyCard :card="card" :level="level" :next-level="nextLevel" />
 
-  <section class="purchases">
-    <h2>Mes derniers achats</h2>
+  <BasePanel>
+    <template #title>Mes offres</template>
+    <OfferCard
+      v-for="offer in offers"
+      :key="offer.id"
+      :offer="offer"
+      :activated="activatedIds.includes(offer.id)"
+      @activate="activate"
+    />
+  </BasePanel>
+
+  <BasePanel>
+    <template #title>Mes derniers achats</template>
 
     <div class="filters">
       <button
@@ -66,71 +83,24 @@ const formatDate = (value) => new Date(value).toLocaleDateString('fr-FR', { day:
     </div>
     <input v-model="search" type="search" placeholder="Rechercher un magasin" />
 
-    <p class="summary">
-      {{ filteredPurchases.length }} achat(s) pour un total de <strong>{{ formatPrice(totalSpent) }}</strong>
-    </p>
-
     <ul v-if="filteredPurchases.length">
-      <li v-for="purchase in filteredPurchases" :key="purchase.id">
-        <div>
-          <strong>{{ purchase.store }}</strong>
-          <small>{{ formatDate(purchase.date) }} · {{ purchase.itemCount }} articles</small>
-        </div>
-        <div class="amount">
-          {{ formatPrice(purchase.total) }}
-          <small>+{{ purchase.points }} pts</small>
-        </div>
-      </li>
+      <PurchaseItem
+        v-for="purchase in filteredPurchases"
+        :key="purchase.id"
+        :purchase="purchase"
+        @select="selectedPurchaseId = $event"
+      />
     </ul>
     <p v-else class="empty">Aucun achat sur cette période.</p>
-  </section>
+
+    <template #footer>
+      {{ filteredPurchases.length }} achat(s) pour un total de <strong>{{ formatPrice(totalSpent) }}</strong>
+      <span v-if="selectedPurchaseId"> · achat n° {{ selectedPurchaseId }} sélectionné</span>
+    </template>
+  </BasePanel>
 </template>
 
 <style scoped>
-.card {
-  padding: 1.25rem;
-  border-radius: var(--radius);
-  color: #fff;
-  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-dark));
-  box-shadow: var(--shadow);
-}
-
-.card p {
-  margin: 0;
-}
-
-.card.level-or {
-  background: linear-gradient(135deg, #b7791f, #7c4a03);
-}
-
-.card.level-argent {
-  background: linear-gradient(135deg, #64748b, #334155);
-}
-
-.points {
-  font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.points span {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-.level {
-  font-weight: 600;
-}
-
-.next {
-  margin-top: 0.5rem !important;
-  font-size: 0.85rem;
-  opacity: 0.85;
-}
-
-.purchases {
-  margin-top: 1.5rem;
-}
-
 .filters {
   display: flex;
   gap: 0.5rem;
@@ -156,44 +126,16 @@ const formatDate = (value) => new Date(value).toLocaleDateString('fr-FR', { day:
 input {
   width: 100%;
   padding: 0.5rem;
+  margin-bottom: 0.75rem;
   border: 1px solid var(--color-border);
   border-radius: 8px;
   font: inherit;
-}
-
-.summary {
-  color: var(--color-muted);
-  font-size: 0.9rem;
 }
 
 ul {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-li {
-  display: flex;
-  justify-content: space-between;
-  padding: 0.75rem;
-  margin-bottom: 0.5rem;
-  border-radius: 8px;
-  background: var(--color-surface);
-}
-
-li small {
-  display: block;
-  color: var(--color-muted);
-}
-
-.amount {
-  text-align: right;
-  font-weight: 600;
-}
-
-.amount small {
-  color: var(--color-success);
-  font-weight: 400;
 }
 
 .empty {
