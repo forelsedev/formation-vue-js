@@ -3,6 +3,7 @@ import { useRouter } from 'vue-router'
 import { useAccountStore } from '../stores/account'
 import { useOffersStore } from '../stores/offers'
 import { formatDate } from '../utils/loyalty'
+import BaseButton from '../components/BaseButton.vue'
 
 const router = useRouter()
 const account = useAccountStore()
@@ -26,7 +27,7 @@ function onLogout() {
       <dt>Client depuis le</dt>
       <dd>{{ formatDate(account.card.createdAt, { dateStyle: 'long' }) }}</dd>
     </dl>
-    <button type="button" @click="onLogout">Se déconnecter</button>
+    <BaseButton variant="danger" block class="logout" @click="onLogout">Se déconnecter</BaseButton>
   </section>
 </template>
 
@@ -49,15 +50,7 @@ dd {
   font-weight: 600;
 }
 
-button {
-  width: 100%;
+.logout {
   margin-top: 1.5rem;
-  padding: 0.7rem;
-  border: 1px solid var(--color-danger);
-  border-radius: 8px;
-  background: transparent;
-  color: var(--color-danger);
-  font: inherit;
-  cursor: pointer;
 }
 </style>

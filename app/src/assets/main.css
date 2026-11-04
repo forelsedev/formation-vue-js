@@ -38,3 +38,10 @@ a {
 h2 {
   font-size: 1.15rem;
 }
+
+/* Sur tablette et ordinateur, l'application s'élargit */
+@media (min-width: 768px) {
+  :root {
+    --app-width: 760px;
+  }
+}
