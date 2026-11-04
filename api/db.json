@@ -1,0 +1,4173 @@
+{
+  "cards": [
+    {
+      "id": 1,
+      "number": "2990000000001",
+      "firstName": "Camille",
+      "lastName": "Martin",
+      "email": "camille.martin@example.com",
+      "points": 833,
+      "createdAt": "2025-03-10T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "number": "2990000000002",
+      "firstName": "Léo",
+      "lastName": "Bernard",
+      "email": "leo.bernard@example.com",
+      "points": 504,
+      "createdAt": "2025-04-11T10:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "number": "2990000000003",
+      "firstName": "Inès",
+      "lastName": "Petit",
+      "email": "ines.petit@example.com",
+      "points": 248,
+      "createdAt": "2025-05-12T10:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "number": "2990000000004",
+      "firstName": "Hugo",
+      "lastName": "Durand",
+      "email": "hugo.durand@example.com",
+      "points": 1100,
+      "createdAt": "2025-06-13T10:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "number": "2990000000005",
+      "firstName": "Manon",
+      "lastName": "Leroy",
+      "email": "manon.leroy@example.com",
+      "points": 54,
+      "createdAt": "2025-07-14T10:00:00.000Z"
+    }
+  ],
+  "products": [
+    {
+      "id": 1,
+      "label": "Baguette tradition",
+      "department": "Boulangerie",
+      "price": 1.2
+    },
+    {
+      "id": 2,
+      "label": "Croissants x4",
+      "department": "Boulangerie",
+      "price": 3.4
+    },
+    {
+      "id": 3,
+      "label": "Pain de mie complet",
+      "department": "Boulangerie",
+      "price": 2.15
+    },
+    {
+      "id": 4,
+      "label": "Pommes Gala 1 kg",
+      "department": "Fruits et légumes",
+      "price": 2.89
+    },
+    {
+      "id": 5,
+      "label": "Bananes 1 kg",
+      "department": "Fruits et légumes",
+      "price": 1.99
+    },
+    {
+      "id": 6,
+      "label": "Tomates grappe 500 g",
+      "department": "Fruits et légumes",
+      "price": 2.49
+    },
+    {
+      "id": 7,
+      "label": "Salade batavia",
+      "department": "Fruits et légumes",
+      "price": 1.1
+    },
+    {
+      "id": 8,
+      "label": "Lait demi-écrémé 1 L",
+      "department": "Crèmerie",
+      "price": 1.05
+    },
+    {
+      "id": 9,
+      "label": "Yaourts nature x8",
+      "department": "Crèmerie",
+      "price": 2.3
+    },
+    {
+      "id": 10,
+      "label": "Emmental râpé 200 g",
+      "department": "Crèmerie",
+      "price": 2.75
+    },
+    {
+      "id": 11,
+      "label": "Beurre doux 250 g",
+      "department": "Crèmerie",
+      "price": 2.95
+    },
+    {
+      "id": 12,
+      "label": "Poulet fermier",
+      "department": "Boucherie",
+      "price": 11.9
+    },
+    {
+      "id": 13,
+      "label": "Steaks hachés x4",
+      "department": "Boucherie",
+      "price": 6.8
+    },
+    {
+      "id": 14,
+      "label": "Jambon blanc x4",
+      "department": "Boucherie",
+      "price": 3.6
+    },
+    {
+      "id": 15,
+      "label": "Pâtes penne 500 g",
+      "department": "Épicerie",
+      "price": 0.99
+    },
+    {
+      "id": 16,
+      "label": "Riz basmati 1 kg",
+      "department": "Épicerie",
+      "price": 2.6
+    },
+    {
+      "id": 17,
+      "label": "Café moulu 250 g",
+      "department": "Épicerie",
+      "price": 3.9
+    },
+    {
+      "id": 18,
+      "label": "Chocolat noir 200 g",
+      "department": "Épicerie",
+      "price": 2.45
+    },
+    {
+      "id": 19,
+      "label": "Eau minérale 6 x 1,5 L",
+      "department": "Boissons",
+      "price": 3.3
+    },
+    {
+      "id": 20,
+      "label": "Jus d'orange 1 L",
+      "department": "Boissons",
+      "price": 2.2
+    },
+    {
+      "id": 21,
+      "label": "Lessive liquide 2 L",
+      "department": "Entretien",
+      "price": 8.9
+    },
+    {
+      "id": 22,
+      "label": "Essuie-tout x4",
+      "department": "Entretien",
+      "price": 4.1
+    },
+    {
+      "id": 23,
+      "label": "Shampooing 250 ml",
+      "department": "Hygiène",
+      "price": 3.5
+    },
+    {
+      "id": 24,
+      "label": "Dentifrice 75 ml",
+      "department": "Hygiène",
+      "price": 2.1
+    }
+  ],
+  "purchases": [
+    {
+      "cardId": 4,
+      "date": "2026-05-08T09:28:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 9.25,
+      "bonusPoints": 0,
+      "points": 9,
+      "id": 1
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-08T11:47:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 4,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 4.1
+        }
+      ],
+      "total": 25.93,
+      "bonusPoints": 0,
+      "points": 25,
+      "id": 2
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-09T10:57:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 3.5
+        }
+      ],
+      "total": 19.67,
+      "bonusPoints": 0,
+      "points": 19,
+      "id": 3
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-10T16:59:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 6.2,
+      "bonusPoints": 0,
+      "points": 6,
+      "id": 4
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-12T19:28:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        }
+      ],
+      "total": 13.15,
+      "bonusPoints": 0,
+      "points": 13,
+      "id": 5
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-14T15:01:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 3.3,
+      "bonusPoints": 0,
+      "points": 3,
+      "id": 6
+    },
+    {
+      "cardId": 2,
+      "date": "2026-05-15T17:37:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.89
+        }
+      ],
+      "total": 17.94,
+      "bonusPoints": 0,
+      "points": 17,
+      "id": 7
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-18T11:55:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        }
+      ],
+      "total": 21.46,
+      "bonusPoints": 0,
+      "points": 21,
+      "id": 8
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-18T16:11:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        }
+      ],
+      "total": 5.3,
+      "bonusPoints": 0,
+      "points": 5,
+      "id": 9
+    },
+    {
+      "cardId": 1,
+      "date": "2026-05-19T08:28:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        }
+      ],
+      "total": 27.9,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 10
+    },
+    {
+      "cardId": 1,
+      "date": "2026-05-23T13:26:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 93.95,
+      "bonusPoints": 0,
+      "points": 93,
+      "id": 11
+    },
+    {
+      "cardId": 2,
+      "date": "2026-05-24T17:47:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 27.67,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 12
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-29T12:02:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        }
+      ],
+      "total": 62.88,
+      "bonusPoints": 0,
+      "points": 62,
+      "id": 13
+    },
+    {
+      "cardId": 4,
+      "date": "2026-05-31T08:04:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 14.8,
+      "bonusPoints": 0,
+      "points": 14,
+      "id": 14
+    },
+    {
+      "cardId": 2,
+      "date": "2026-06-02T14:11:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 25.5,
+      "bonusPoints": 0,
+      "points": 25,
+      "id": 15
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-03T12:10:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 3.5
+        }
+      ],
+      "total": 6.65,
+      "bonusPoints": 0,
+      "points": 6,
+      "id": 16
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-10T18:27:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 7.94,
+      "bonusPoints": 0,
+      "points": 7,
+      "id": 17
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-11T10:11:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 47.45,
+      "bonusPoints": 0,
+      "points": 47,
+      "id": 18
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-12T17:16:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 0.99
+        }
+      ],
+      "total": 6.34,
+      "bonusPoints": 0,
+      "points": 6,
+      "id": 19
+    },
+    {
+      "cardId": 5,
+      "date": "2026-06-13T14:28:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 6.8
+        }
+      ],
+      "total": 27.6,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 20
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-14T10:19:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 37.53,
+      "bonusPoints": 0,
+      "points": 37,
+      "id": 21
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-14T12:07:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 8.04,
+      "bonusPoints": 0,
+      "points": 8,
+      "id": 22
+    },
+    {
+      "cardId": 2,
+      "date": "2026-06-15T14:41:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 4,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 25.2,
+      "bonusPoints": 0,
+      "points": 25,
+      "id": 23
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-19T14:02:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        }
+      ],
+      "total": 18.6,
+      "bonusPoints": 0,
+      "points": 18,
+      "id": 24
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-20T09:52:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 4,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 34.35,
+      "bonusPoints": 0,
+      "points": 34,
+      "id": 25
+    },
+    {
+      "cardId": 2,
+      "date": "2026-06-21T16:43:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 33.29,
+      "bonusPoints": 0,
+      "points": 33,
+      "id": 26
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-22T10:48:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 3.3
+        }
+      ],
+      "total": 33.93,
+      "bonusPoints": 0,
+      "points": 33,
+      "id": 27
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-22T18:04:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        }
+      ],
+      "total": 34.94,
+      "bonusPoints": 0,
+      "points": 34,
+      "id": 28
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-23T14:40:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 3.3
+        }
+      ],
+      "total": 14.2,
+      "bonusPoints": 0,
+      "points": 14,
+      "id": 29
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-23T18:08:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 3.3
+        }
+      ],
+      "total": 24.53,
+      "bonusPoints": 0,
+      "points": 24,
+      "id": 30
+    },
+    {
+      "cardId": 1,
+      "date": "2026-06-24T08:32:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 41.6,
+      "bonusPoints": 0,
+      "points": 41,
+      "id": 31
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-27T12:09:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 4,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        }
+      ],
+      "total": 23.53,
+      "bonusPoints": 0,
+      "points": 23,
+      "id": 32
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-28T08:17:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 27.89,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 33
+    },
+    {
+      "cardId": 4,
+      "date": "2026-06-30T10:38:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 3.6
+        }
+      ],
+      "total": 67.53,
+      "bonusPoints": 0,
+      "points": 67,
+      "id": 34
+    },
+    {
+      "cardId": 4,
+      "date": "2026-07-02T15:59:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        }
+      ],
+      "total": 27.7,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 35
+    },
+    {
+      "cardId": 3,
+      "date": "2026-07-03T14:54:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 4,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 3,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 31.01,
+      "bonusPoints": 0,
+      "points": 31,
+      "id": 36
+    },
+    {
+      "cardId": 4,
+      "date": "2026-07-06T08:07:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 4,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 19.3,
+      "bonusPoints": 0,
+      "points": 19,
+      "id": 37
+    },
+    {
+      "cardId": 1,
+      "date": "2026-07-10T12:29:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.45
+        }
+      ],
+      "total": 41,
+      "bonusPoints": 0,
+      "points": 41,
+      "id": 38
+    },
+    {
+      "cardId": 2,
+      "date": "2026-07-15T17:01:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        }
+      ],
+      "total": 15.94,
+      "bonusPoints": 0,
+      "points": 15,
+      "id": 39
+    },
+    {
+      "cardId": 3,
+      "date": "2026-07-17T16:26:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 8.9
+        }
+      ],
+      "total": 25.27,
+      "bonusPoints": 0,
+      "points": 25,
+      "id": 40
+    },
+    {
+      "cardId": 1,
+      "date": "2026-07-21T15:16:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        }
+      ],
+      "total": 42.48,
+      "bonusPoints": 0,
+      "points": 42,
+      "id": 41
+    },
+    {
+      "cardId": 4,
+      "date": "2026-07-30T12:05:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 37.24,
+      "bonusPoints": 0,
+      "points": 37,
+      "id": 42
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-02T15:20:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 12,
+      "bonusPoints": 0,
+      "points": 12,
+      "id": 43
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-07T15:10:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        }
+      ],
+      "total": 24.22,
+      "bonusPoints": 0,
+      "points": 24,
+      "id": 44
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-08T12:33:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 1,
+          "unitPrice": 0.99
+        }
+      ],
+      "total": 6.89,
+      "bonusPoints": 0,
+      "points": 6,
+      "id": 45
+    },
+    {
+      "cardId": 2,
+      "date": "2026-08-09T17:44:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 4,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 69.86,
+      "bonusPoints": 0,
+      "points": 69,
+      "id": 46
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-11T13:49:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 6.8
+        }
+      ],
+      "total": 35.4,
+      "bonusPoints": 0,
+      "points": 35,
+      "id": 47
+    },
+    {
+      "cardId": 1,
+      "date": "2026-08-13T08:42:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        }
+      ],
+      "total": 21.71,
+      "bonusPoints": 0,
+      "points": 21,
+      "id": 48
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-15T15:01:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.1
+        }
+      ],
+      "total": 38.43,
+      "bonusPoints": 0,
+      "points": 38,
+      "id": 49
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-16T13:34:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 17.85,
+      "bonusPoints": 0,
+      "points": 17,
+      "id": 50
+    },
+    {
+      "cardId": 3,
+      "date": "2026-08-18T15:03:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 3,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 4.1
+        }
+      ],
+      "total": 59.45,
+      "bonusPoints": 0,
+      "points": 59,
+      "id": 51
+    },
+    {
+      "cardId": 3,
+      "date": "2026-08-19T17:18:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        }
+      ],
+      "total": 41.84,
+      "bonusPoints": 0,
+      "points": 41,
+      "id": 52
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-20T10:02:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        }
+      ],
+      "total": 11.05,
+      "bonusPoints": 0,
+      "points": 11,
+      "id": 53
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-20T15:04:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 3,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 24.43,
+      "bonusPoints": 0,
+      "points": 24,
+      "id": 54
+    },
+    {
+      "cardId": 1,
+      "date": "2026-08-21T19:34:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        }
+      ],
+      "total": 45.81,
+      "bonusPoints": 0,
+      "points": 45,
+      "id": 55
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-22T18:41:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 40.72,
+      "bonusPoints": 0,
+      "points": 40,
+      "id": 56
+    },
+    {
+      "cardId": 5,
+      "date": "2026-08-27T08:47:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        }
+      ],
+      "total": 27.84,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 57
+    },
+    {
+      "cardId": 1,
+      "date": "2026-08-29T08:32:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        }
+      ],
+      "total": 13.98,
+      "bonusPoints": 0,
+      "points": 13,
+      "id": 58
+    },
+    {
+      "cardId": 1,
+      "date": "2026-08-29T09:32:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 8.9
+        }
+      ],
+      "total": 30.55,
+      "bonusPoints": 0,
+      "points": 30,
+      "id": 59
+    },
+    {
+      "cardId": 4,
+      "date": "2026-08-29T09:53:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 27.04,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 60
+    },
+    {
+      "cardId": 1,
+      "date": "2026-08-30T11:23:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 1.2
+        }
+      ],
+      "total": 12.55,
+      "bonusPoints": 0,
+      "points": 12,
+      "id": 61
+    },
+    {
+      "cardId": 2,
+      "date": "2026-08-31T18:56:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 4,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 2,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 0.99
+        }
+      ],
+      "total": 45.02,
+      "bonusPoints": 0,
+      "points": 45,
+      "id": 62
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-08T15:25:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 38.87,
+      "bonusPoints": 0,
+      "points": 38,
+      "id": 63
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-10T11:06:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        }
+      ],
+      "total": 26.32,
+      "bonusPoints": 0,
+      "points": 26,
+      "id": 64
+    },
+    {
+      "cardId": 1,
+      "date": "2026-09-13T19:11:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 4,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        }
+      ],
+      "total": 46.34,
+      "bonusPoints": 0,
+      "points": 46,
+      "id": 65
+    },
+    {
+      "cardId": 2,
+      "date": "2026-09-15T19:11:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 4,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        }
+      ],
+      "total": 77.74,
+      "bonusPoints": 0,
+      "points": 77,
+      "id": 66
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-16T09:23:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        }
+      ],
+      "total": 7.9,
+      "bonusPoints": 0,
+      "points": 7,
+      "id": 67
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-17T15:51:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        }
+      ],
+      "total": 15.98,
+      "bonusPoints": 0,
+      "points": 15,
+      "id": 68
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-18T11:36:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 31.27,
+      "bonusPoints": 0,
+      "points": 31,
+      "id": 69
+    },
+    {
+      "cardId": 2,
+      "date": "2026-09-19T16:00:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 3.5
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        }
+      ],
+      "total": 50.07,
+      "bonusPoints": 0,
+      "points": 50,
+      "id": 70
+    },
+    {
+      "cardId": 2,
+      "date": "2026-09-20T12:45:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 13.82,
+      "bonusPoints": 0,
+      "points": 13,
+      "id": 71
+    },
+    {
+      "cardId": 4,
+      "date": "2026-09-25T08:17:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 19.7,
+      "bonusPoints": 0,
+      "points": 19,
+      "id": 72
+    },
+    {
+      "cardId": 1,
+      "date": "2026-09-25T17:28:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        }
+      ],
+      "total": 65.66,
+      "bonusPoints": 0,
+      "points": 65,
+      "id": 73
+    },
+    {
+      "cardId": 1,
+      "date": "2026-09-30T08:59:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 3.9
+        }
+      ],
+      "total": 29.18,
+      "bonusPoints": 0,
+      "points": 29,
+      "id": 74
+    },
+    {
+      "cardId": 1,
+      "date": "2026-09-30T18:54:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 21,
+          "label": "Lessive liquide 2 L",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 8.9
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 3,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 3.9
+        }
+      ],
+      "total": 65.6,
+      "bonusPoints": 0,
+      "points": 65,
+      "id": 75
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-01T15:13:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 2.6
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        }
+      ],
+      "total": 39.54,
+      "bonusPoints": 0,
+      "points": 39,
+      "id": 76
+    },
+    {
+      "cardId": 3,
+      "date": "2026-10-03T19:51:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        }
+      ],
+      "total": 57.33,
+      "bonusPoints": 0,
+      "points": 57,
+      "id": 77
+    },
+    {
+      "cardId": 2,
+      "date": "2026-10-04T12:05:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 1,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.75
+        }
+      ],
+      "total": 23.54,
+      "bonusPoints": 0,
+      "points": 23,
+      "id": 78
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-06T14:16:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 7,
+          "label": "Salade batavia",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 1.1
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.89
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 22,
+          "label": "Essuie-tout x4",
+          "department": "Entretien",
+          "qty": 3,
+          "unitPrice": 4.1
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.75
+        }
+      ],
+      "total": 48.62,
+      "bonusPoints": 0,
+      "points": 48,
+      "id": 79
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-08T09:58:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 22.98,
+      "bonusPoints": 0,
+      "points": 22,
+      "id": 80
+    },
+    {
+      "cardId": 1,
+      "date": "2026-10-11T17:48:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 4,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 2.2
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 3.5
+        }
+      ],
+      "total": 29.5,
+      "bonusPoints": 0,
+      "points": 29,
+      "id": 81
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-11T18:51:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 11,
+          "label": "Beurre doux 250 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.95
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 20,
+          "label": "Jus d'orange 1 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 2.2
+        }
+      ],
+      "total": 16.89,
+      "bonusPoints": 0,
+      "points": 16,
+      "id": 82
+    },
+    {
+      "cardId": 2,
+      "date": "2026-10-12T08:12:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 2,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 2,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 3.4
+        }
+      ],
+      "total": 28.96,
+      "bonusPoints": 0,
+      "points": 28,
+      "id": 83
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-22T18:47:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 1,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 4,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        }
+      ],
+      "total": 27.36,
+      "bonusPoints": 0,
+      "points": 27,
+      "id": 84
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-25T18:12:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 1,
+          "unitPrice": 1.99
+        }
+      ],
+      "total": 17.31,
+      "bonusPoints": 0,
+      "points": 17,
+      "id": 85
+    },
+    {
+      "cardId": 2,
+      "date": "2026-10-27T15:49:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 5,
+          "label": "Bananes 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 1.99
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 3,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 18,
+          "label": "Chocolat noir 200 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.45
+        }
+      ],
+      "total": 57.8,
+      "bonusPoints": 0,
+      "points": 57,
+      "id": 86
+    },
+    {
+      "cardId": 4,
+      "date": "2026-10-28T08:20:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 8,
+          "label": "Lait demi-écrémé 1 L",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 1.05
+        },
+        {
+          "productId": 3,
+          "label": "Pain de mie complet",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 2.15
+        },
+        {
+          "productId": 23,
+          "label": "Shampooing 250 ml",
+          "department": "Hygiène",
+          "qty": 1,
+          "unitPrice": 3.5
+        }
+      ],
+      "total": 10,
+      "bonusPoints": 0,
+      "points": 10,
+      "id": 87
+    },
+    {
+      "cardId": 1,
+      "date": "2026-10-30T13:38:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 4,
+          "unitPrice": 11.9
+        },
+        {
+          "productId": 1,
+          "label": "Baguette tradition",
+          "department": "Boulangerie",
+          "qty": 1,
+          "unitPrice": 1.2
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        },
+        {
+          "productId": 16,
+          "label": "Riz basmati 1 kg",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 2.6
+        }
+      ],
+      "total": 75.9,
+      "bonusPoints": 0,
+      "points": 75,
+      "id": 88
+    },
+    {
+      "cardId": 1,
+      "date": "2026-11-01T08:59:00.000Z",
+      "store": "Hyper Rive Gauche",
+      "items": [
+        {
+          "productId": 19,
+          "label": "Eau minérale 6 x 1,5 L",
+          "department": "Boissons",
+          "qty": 3,
+          "unitPrice": 3.3
+        },
+        {
+          "productId": 15,
+          "label": "Pâtes penne 500 g",
+          "department": "Épicerie",
+          "qty": 2,
+          "unitPrice": 0.99
+        },
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 9,
+          "label": "Yaourts nature x8",
+          "department": "Crèmerie",
+          "qty": 3,
+          "unitPrice": 2.3
+        },
+        {
+          "productId": 2,
+          "label": "Croissants x4",
+          "department": "Boulangerie",
+          "qty": 2,
+          "unitPrice": 3.4
+        },
+        {
+          "productId": 4,
+          "label": "Pommes Gala 1 kg",
+          "department": "Fruits et légumes",
+          "qty": 2,
+          "unitPrice": 2.89
+        }
+      ],
+      "total": 34.11,
+      "bonusPoints": 0,
+      "points": 34,
+      "id": 89
+    },
+    {
+      "cardId": 4,
+      "date": "2026-11-01T10:39:00.000Z",
+      "store": "Express Université",
+      "items": [
+        {
+          "productId": 6,
+          "label": "Tomates grappe 500 g",
+          "department": "Fruits et légumes",
+          "qty": 3,
+          "unitPrice": 2.49
+        },
+        {
+          "productId": 14,
+          "label": "Jambon blanc x4",
+          "department": "Boucherie",
+          "qty": 3,
+          "unitPrice": 3.6
+        }
+      ],
+      "total": 18.27,
+      "bonusPoints": 0,
+      "points": 18,
+      "id": 90
+    },
+    {
+      "cardId": 3,
+      "date": "2026-11-01T10:44:00.000Z",
+      "store": "Market de la Gare",
+      "items": [
+        {
+          "productId": 17,
+          "label": "Café moulu 250 g",
+          "department": "Épicerie",
+          "qty": 3,
+          "unitPrice": 3.9
+        },
+        {
+          "productId": 12,
+          "label": "Poulet fermier",
+          "department": "Boucherie",
+          "qty": 2,
+          "unitPrice": 11.9
+        }
+      ],
+      "total": 35.5,
+      "bonusPoints": 0,
+      "points": 35,
+      "id": 91
+    },
+    {
+      "cardId": 1,
+      "date": "2026-11-03T14:44:00.000Z",
+      "store": "Magasin Centre-Ville",
+      "items": [
+        {
+          "productId": 10,
+          "label": "Emmental râpé 200 g",
+          "department": "Crèmerie",
+          "qty": 1,
+          "unitPrice": 2.75
+        },
+        {
+          "productId": 24,
+          "label": "Dentifrice 75 ml",
+          "department": "Hygiène",
+          "qty": 2,
+          "unitPrice": 2.1
+        },
+        {
+          "productId": 13,
+          "label": "Steaks hachés x4",
+          "department": "Boucherie",
+          "qty": 1,
+          "unitPrice": 6.8
+        }
+      ],
+      "total": 13.75,
+      "bonusPoints": 0,
+      "points": 13,
+      "id": 92
+    }
+  ],
+  "offers": [
+    {
+      "id": 1,
+      "title": "+50 points sur la Boulangerie",
+      "description": "50 points offerts dès un produit de boulangerie acheté.",
+      "department": "Boulangerie",
+      "bonusPoints": 50,
+      "expiresAt": "2026-12-19"
+    },
+    {
+      "id": 2,
+      "title": "+100 points Fruits et légumes",
+      "description": "100 points offerts sur votre prochain passage avec des fruits ou légumes.",
+      "department": "Fruits et légumes",
+      "bonusPoints": 100,
+      "expiresAt": "2026-12-04"
+    },
+    {
+      "id": 3,
+      "title": "+30 points Crèmerie",
+      "description": "30 points offerts dès un produit de crèmerie acheté.",
+      "department": "Crèmerie",
+      "bonusPoints": 30,
+      "expiresAt": "2026-11-14"
+    },
+    {
+      "id": 4,
+      "title": "+80 points Boucherie",
+      "description": "80 points offerts sur votre prochain achat en boucherie.",
+      "department": "Boucherie",
+      "bonusPoints": 80,
+      "expiresAt": "2027-01-03"
+    },
+    {
+      "id": 5,
+      "title": "+40 points Entretien",
+      "description": "40 points offerts dès un produit d'entretien acheté.",
+      "department": "Entretien",
+      "bonusPoints": 40,
+      "expiresAt": "2026-12-19"
+    },
+    {
+      "id": 6,
+      "title": "+20 points Boissons",
+      "description": "20 points offerts dès une boisson achetée.",
+      "department": "Boissons",
+      "bonusPoints": 20,
+      "expiresAt": "2026-11-01"
+    }
+  ],
+  "activations": [
+    {
+      "id": 1,
+      "cardId": 1,
+      "offerId": 2,
+      "activatedAt": "2026-10-31T09:12:00.000Z",
+      "usedAt": null
+    },
+    {
+      "id": 2,
+      "cardId": 4,
+      "offerId": 1,
+      "activatedAt": "2026-10-23T17:40:00.000Z",
+      "usedAt": null
+    }
+  ]
+}

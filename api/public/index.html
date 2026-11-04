@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Caisse factice</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="caisse.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <h1>Caisse factice</h1>
+        <p class="hint">Outil fourni pour la formation : il enregistre des passages en caisse dans l'API factice.</p>
+      </div>
+      <label class="store">
+        Magasin
+        <select id="store">
+          <option>Magasin Centre-Ville</option>
+          <option>Hyper Rive Gauche</option>
+          <option>Market de la Gare</option>
+          <option>Express Université</option>
+        </select>
+      </label>
+    </header>
+
+    <main class="layout">
+      <section class="panel catalog">
+        <h2>Produits</h2>
+        <div id="catalog"></div>
+      </section>
+
+      <section class="panel side">
+        <h2>Carte de fidélité</h2>
+        <form id="card-form" class="card-form">
+          <input id="card-number" list="known-cards" inputmode="numeric" placeholder="N° de carte (13 chiffres)" />
+          <datalist id="known-cards"></datalist>
+          <button type="submit">Identifier</button>
+        </form>
+        <div id="customer" class="customer empty">Aucune carte identifiée : la vente ne sera pas enregistrée.</div>
+
+        <h2>Ticket</h2>
+        <ul id="ticket" class="ticket"></ul>
+        <p class="total">Total <strong id="total">0,00 €</strong></p>
+        <p class="points" id="points-preview"></p>
+
+        <div class="actions">
+          <button id="checkout" class="primary">Encaisser</button>
+          <button id="clear">Vider</button>
+        </div>
+        <button id="random" class="secondary">Générer 5 achats aléatoires pour cette carte</button>
+
+        <div id="message" class="message" role="status"></div>
+      </section>
+    </main>
+
+    <script type="module" src="caisse.js"></script>
+  </body>
+</html>

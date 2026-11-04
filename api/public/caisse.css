@@ -1,0 +1,67 @@
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+}
+h1, h2 { margin: 0 0 0.5rem; }
+h2 { font-size: 1rem; text-transform: uppercase; letter-spacing: 0.04em; color: #4b5563; }
+button {
+  font: inherit;
+  padding: 0.5rem 0.9rem;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #fff;
+  cursor: pointer;
+}
+button:hover { background: #f9fafb; }
+button.primary { background: #1d4ed8; border-color: #1d4ed8; color: #fff; }
+button.primary:hover { background: #1e40af; }
+button.secondary { width: 100%; margin-top: 0.75rem; font-size: 0.85rem; }
+input, select { font: inherit; padding: 0.45rem; border: 1px solid #d1d5db; border-radius: 6px; }
+
+.topbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+  background: #111827;
+  color: #fff;
+}
+.topbar .hint { margin: 0; color: #9ca3af; font-size: 0.85rem; }
+.store { display: flex; flex-direction: column; font-size: 0.8rem; gap: 0.25rem; }
+
+.layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 1rem;
+  padding: 1rem 1.5rem;
+}
+@media (max-width: 800px) { .layout { grid-template-columns: 1fr; } }
+.panel { background: #fff; border-radius: 10px; padding: 1rem; box-shadow: 0 1px 2px rgb(0 0 0 / 0.06); }
+
+.department { margin-bottom: 1rem; }
+.department h3 { margin: 0 0 0.4rem; font-size: 0.9rem; color: #374151; }
+.products { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 0.5rem; }
+.product { text-align: left; display: flex; flex-direction: column; gap: 0.2rem; }
+.product .price { color: #1d4ed8; font-weight: 600; }
+
+.card-form { display: flex; gap: 0.5rem; margin-bottom: 0.5rem; }
+.card-form input { flex: 1; min-width: 0; }
+.customer { padding: 0.6rem; border-radius: 6px; background: #ecfdf5; margin-bottom: 1rem; font-size: 0.9rem; }
+.customer.empty { background: #f3f4f6; color: #6b7280; }
+.customer ul { margin: 0.3rem 0 0; padding-left: 1.1rem; }
+
+.ticket { list-style: none; padding: 0; margin: 0; max-height: 280px; overflow-y: auto; }
+.ticket li { display: flex; align-items: center; gap: 0.4rem; padding: 0.3rem 0; border-bottom: 1px solid #f3f4f6; font-size: 0.9rem; }
+.ticket li .label { flex: 1; }
+.ticket li button { padding: 0.1rem 0.45rem; }
+.total { display: flex; justify-content: space-between; font-size: 1.15rem; margin: 0.8rem 0 0.2rem; }
+.points { margin: 0 0 0.8rem; color: #047857; font-size: 0.9rem; min-height: 1.2em; }
+.actions { display: flex; gap: 0.5rem; }
+.actions .primary { flex: 1; }
+.message { margin-top: 0.75rem; font-size: 0.9rem; }
+.message.error { color: #b91c1c; }
+.message.success { color: #047857; }

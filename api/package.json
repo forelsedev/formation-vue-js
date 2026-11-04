@@ -1,0 +1,14 @@
+{
+  "name": "ma-carte-fidelite-api",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "API factice (json-server) et logiciel de caisse pour le fil rouge",
+  "scripts": {
+    "start": "json-server --watch db.json --static public --port 3000",
+    "seed": "node scripts/seed.js"
+  },
+  "devDependencies": {
+    "json-server": "0.17.4"
+  }
+}
