@@ -17,7 +17,7 @@ function onLogout() {
 </script>
 
 <template>
-  <section class="profile">
+  <section v-if="account.card" class="profile">
     <h2>{{ account.fullName }}</h2>
     <dl>
       <dt>Numéro de carte</dt>
