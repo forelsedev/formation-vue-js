@@ -6,6 +6,7 @@
   "description": "API factice (json-server) et logiciel de caisse pour le fil rouge",
   "scripts": {
     "start": "json-server --watch db.json --static public --port 3000",
+    "start:sse": "node server.js",
     "seed": "node scripts/seed.js"
   },
   "devDependencies": {

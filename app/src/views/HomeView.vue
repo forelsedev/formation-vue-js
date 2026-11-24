@@ -4,7 +4,8 @@ import { RouterLink, useRouter } from 'vue-router'
 import { useAccountStore } from '../stores/account'
 import { useOffersStore } from '../stores/offers'
 import { usePurchases } from '../composables/usePurchases'
-import { useAutoRefresh } from '../composables/useAutoRefresh'
+import { useEventSource } from '../composables/useEventSource'
+import { eventsUrl } from '../services/api'
 import LoyaltyCard from '../components/LoyaltyCard.vue'
 import BasePanel from '../components/BasePanel.vue'
 import PurchaseItem from '../components/PurchaseItem.vue'
@@ -21,17 +22,27 @@ offersStore.load()
 
 const latestPurchases = computed(() => (purchases.value ?? []).slice(0, 3))
 
-// Fonctionnalité du jour 3 : le solde se met à jour seul après un passage dans la caisse factice
+// Bonus SSE : le serveur pousse chaque passage en caisse, plus besoin d'interroger l'API toutes les 10 s
 const notify = inject('notify')
-useAutoRefresh(() => account.refresh().catch(() => {}), 10000)
+const { status } = useEventSource(eventsUrl(account.card.id), {
+  // Nouvel achat : on l'ajoute en tête de liste, sans recharger l'historique
+  purchase: (purchase) => {
+    purchases.value = [purchase, ...(purchases.value ?? [])]
+  },
+  // Nouveau solde : le store est mis à jour, le watch ci-dessous affiche la notification
+  card: (card) => {
+    account.card = card
+  },
+})
+
+const liveLabel = computed(() => ({ open: 'En direct', connecting: 'Reconnexion…', closed: 'Hors ligne' })[status.value])
 
 watch(
   () => account.card?.points,
   (points, previous) => {
     if (previous === undefined || points <= previous) return
     notify(`+${points - previous} points crédités`)
-    reload()
-    offersStore.load(true)
+    offersStore.load(true) // une offre activée a pu être utilisée en caisse
   },
 )
 
@@ -47,6 +58,7 @@ function openPurchase(id) {
   <BasePanel>
     <template #title>
       Mes derniers achats
+      <span class="live" :class="status" :title="liveLabel">{{ liveLabel }}</span>
       <RouterLink :to="{ name: 'purchases' }" class="see-all">Tout voir</RouterLink>
     </template>
     <ul>
@@ -68,6 +80,25 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.live {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.live.open {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.live.open::before {
+  content: '● ';
 }
 
 .see-all {

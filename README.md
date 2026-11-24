@@ -63,3 +63,18 @@ git tag                      # liste des étapes
 git checkout etape-05        # récupérer la correction du module 5
 git switch -c ma-branche etape-05   # repartir de cette correction
 ```
+
+## Bonus : temps réel avec Server-Sent Events
+
+Au lieu d'interroger l'API toutes les 10 secondes (module 9), le serveur pousse
+chaque passage en caisse à l'application.
+
+```bash
+cd api
+npm run start:sse   # remplace npm start : même API, même caisse, plus la route /events
+```
+
+- Flux : `GET /events?cardId=1` (type `text/event-stream`), événements `purchase` et `card`.
+- Côté Vue : composable `useEventSource` (`app/src/composables/useEventSource.js`),
+  utilisé par `HomeView.vue` ; la pastille « En direct » montre l'état de la connexion.
+- `npm run start:sse` ne surveille pas `db.json` : après `npm run seed`, relancez le serveur.

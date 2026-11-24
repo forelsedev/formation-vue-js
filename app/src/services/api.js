@@ -57,3 +57,8 @@ export function createActivation(cardId, offerId) {
     body: JSON.stringify({ cardId, offerId, activatedAt: new Date().toISOString(), usedAt: null }),
   })
 }
+
+// Bonus SSE : adresse du flux temps réel de la carte (serveur lancé avec npm run start:sse)
+export function eventsUrl(cardId) {
+  return `${BASE_URL}/events?cardId=${cardId}`
+}
